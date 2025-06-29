@@ -1,3 +1,7 @@
+html, body {
+    height: calc(100vh - 4em);
+}
+
 body {
     --bg-color: hsl(0, 0%, 100%);
     --tx-title-color: hsl(234, 12%, 34%);
@@ -12,14 +16,12 @@ body {
     color: var(--tx-color);
     margin: 3em;
 
-    max-height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     font-size: .9em;
-    flex: 1;
 }
 
 .hd {
@@ -56,6 +58,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     align-items: center;
+    justify-content: center;
     gap: 2em;
     max-width: 100vw;
 }
@@ -137,6 +140,6 @@ body {
 }
 
 footer {
-    margin-block-start: 1em;
-
+    margin-block-start: 2em;
+    
 }
