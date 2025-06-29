@@ -12,7 +12,7 @@ body {
     --cc-color: hsl(212, 86%, 64%);
     --brd-radius: 0.25rem;
 
-    background: var(--bg-color);
+    background: rgb(252, 252, 252);
     color: var(--tx-color);
     margin: 3em;
 
@@ -77,6 +77,7 @@ body {
     display: flex;
     max-width: 23em;
     max-height: fit-content;
+    background: var(--bg-color);
     flex-direction: column;
     border-radius: .5em;
     box-shadow: 0 1em 2em rgb(207, 207, 207);
