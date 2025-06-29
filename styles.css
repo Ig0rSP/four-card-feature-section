@@ -1,0 +1,125 @@
+body {
+    --bg-color: hsl(0, 0%, 100%);
+    --tx-title-color: hsl(234, 12%, 34%);
+    --tx-color: hsl(212, 6%, 44%);
+    --sp-color: hsl(180, 62%, 55%);
+    --tb-color: hsl(0, 78%, 62%);
+    --km-color: hsl(34, 97%, 64%);
+    --cc-color: hsl(212, 86%, 64%);
+    --brd-radius: 0.25rem;
+
+    background: var(--bg-color);
+    color: var(--tx-color);
+    margin: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
+}
+
+.hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--tx-title-color);
+    margin-bottom: 1.5em;
+}
+
+.hd h1 {
+    font-size: 1.6em;
+}
+
+.hd__firstLine {
+    font-weight: 200;
+    margin: 0;
+}
+
+.hd__secondLine {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: .75em;
+}
+
+.hd__text {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.content {
+    display: grid;
+    gap: 2em;
+}
+
+.content h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.content p {
+    margin-block-start: .55em;
+    margin-block-end: 2.35em;
+}
+
+.content div {
+    display: flex;
+    max-width: 23em;
+    flex-direction: column;
+    border-radius: .5em;
+    box-shadow: 0 1em 2em rgb(207, 207, 207);
+    padding: 2.3em;
+    font-size: .85em;
+    overflow: hidden;
+    position: relative;
+}
+
+.iconL {
+    width: 5em;
+    align-self: flex-end;
+}
+
+.cnt__card-supervisor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--brd-radius);
+    width: 100%;
+    background: var(--sp-color);
+}
+
+.cnt__card-teamb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--brd-radius);
+    width: 100%;
+    background: var(--tb-color);
+}
+
+.cnt__card-karma::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--brd-radius);
+    width: 100%;
+    background: var(--km-color);
+}
+
+.cnt__card-calc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--brd-radius);
+    width: 100%;
+    background: var(--cc-color);
+}
+
+footer {
+    margin-block-start: 1em;
+}
